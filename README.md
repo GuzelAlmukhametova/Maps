@@ -1,2 +1,2 @@
 # Maps
-HSE project
+HSE project of Guzel Almukhametova.
