@@ -4,7 +4,7 @@ map.addLayer(
     new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
 );
 
-fetch('../files/data.json')
+fetch('../data.json')
     .then(r => r.json())
     .then(data => {
     Object.values(data.stops).forEach(s => {
