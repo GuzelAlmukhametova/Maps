@@ -1,7 +1,7 @@
 const map = L.map('map');
 map.setView([55.75370903771494,37.61981338262558], 11);
 map.addLayer(
-    new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
+    new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
 );
 
 fetch('../files/data.json')
