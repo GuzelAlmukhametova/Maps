@@ -10,9 +10,9 @@ const res = {
 };
 
 function transform (id) {
-
     const route = JSON.parse(fs.readFileSync(path.join(__dirname, "LIST/" + id + ".json")));
     const route_id = route.route.route_id;
+    const backTitle = route.route.aBackTitle;
 
     function getDirection(dir) {
         const stops = route.stations.filter(st => st.direction === dir);
@@ -36,6 +36,7 @@ function transform (id) {
     });
     res.routes[route_id] = {
         id: route_id,
+        backTitle: backTitle,
         trips: {
             'to': getDirection(0),
             'from': getDirection(1),

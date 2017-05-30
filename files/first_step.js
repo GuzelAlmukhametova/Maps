@@ -17,7 +17,7 @@ const scrape = (id, cb) => {
       'Referer': 'http://www.maxikarta.ru/msk/transport',
     },
   }, (err, res, body) => {
-    fs.writeFileSync(path.join(__dirname, `LIST/${id}.json`), JSON.stringify(JSON.parse(body), null, 4));
+    fs.writeFileSync(path.join(__dirname, `LIST/${id}.json`), JSON.stringify(JSON.parse(body)));
     console.log(id);
     cb();
   });

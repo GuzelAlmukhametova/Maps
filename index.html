@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My_title</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <style>
+        #mapid {
+            height: 100vh;
+        }
+        #setup {
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            height: 130px;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            background: #b5d3db;
+            opacity: .7;
+        }
+        #cluster-radius {
+            max-width: 100%;
+        }
+        #maintext {
+            font-family: Pompadur, 'Comic Sans MS', cursive;
+            font-size: 20pt;
+            color: #361a5e;
+        }
+        .text {
+            font-family: Pompadur, 'Comic Sans MS';
+            font-size: 13pt;
+        }
+        #bus{
+            color: #203c9b;
+            text-shadow: black 0 0 2px;
+        }
+        #tbus{
+            color: #ca1f32;
+            text-shadow: black 0 0 2px;
+        }
+        #mbus{
+            color: #396310;
+            text-shadow: black 0 0 2px;
+        }
+        p {
+            line-height: 0.5;
+        }
+        h1 {
+            padding-top: 0px;
+            line-height: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+<div id="mapid"></div>
+<div id="setup">
+    <h1 id = "maintext">На данной карте представлены:</h1>
+    <p class="text", id = "bus">Автобусы
+    <p class="text", id = "tbus">Троллейбусы</p>
+    <p class="text", id = "mbus">Маршрутное такси</p>
+</div>
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<script src="leaflet/map_draw.js"></script>
+</body>
+</html>
