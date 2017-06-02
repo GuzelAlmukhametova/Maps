@@ -1,5 +1,5 @@
 var map = L.map('mapid');
-var myRenderer = L.canvas({padding:0.5});
+var myRenderer = L.canvas({padding:0.0});
 
 const buscolorInput = document.getElementById("buscolor");
 const tbuscolorInput = document.getElementById("tbuscolor");
@@ -31,7 +31,7 @@ var different_color = {
 }
 
 
-map.setView([55.75370903771494,37.61981338262558], 11);
+map.setView([55.75370903771494,37.61981338262558], 13);
 map.addLayer(
     new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
 );
@@ -93,7 +93,7 @@ Object.values(data.stops).forEach(s => {
     stroke: false,
     color: "#f3e072",
     fillOpacity: 0.7,
-    radius: 7,
+    radius: 5,
     renderer: myRenderer
 
 })

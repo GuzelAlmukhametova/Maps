@@ -3,9 +3,13 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>My_title</title>
+    <title>Guz_Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
     <style>
+        body, html {
+            padding: 0;
+            margin: 0;
+        }
         #mapid {
             height: 100vh;
         }
@@ -14,22 +18,10 @@
             top: 0;
             right: 0;
             z-index: 1000;
-            height: 250px;
             width: 27%;
             padding: 10px;
             box-sizing: border-box;
-            background: #b5d3db;
-            opacity: .7;
-        }
-        #data {
-            position: fixed;
-            top: 45px;
-            left: 85px;
-            z-index: 1000;
-            height: 30px;
-            width: 100px;
-            padding: 10px;
-            box-sizing: border-box;
+            background: rgba(181, 211, 219, 0.7);
         }
         #maintext {
             font-family: Pompadur, 'Comic Sans MS', cursive;
@@ -65,7 +57,7 @@
 <body>
 <div id="mapid"></div>
 <div id="setup">
-    <h1 id = "maintext">На данной карте представлены:</h1>
+    <h1 id = "maintext">На карте представлены:</h1>
     <p class="text", id = "bus">Автобусы</p>
     <td>
         <input type="color" value="#242D84" id="buscolor"><button type="button" id="bcolor">Покрасить</button>
