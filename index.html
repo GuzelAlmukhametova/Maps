@@ -14,15 +14,22 @@
             top: 0;
             right: 0;
             z-index: 1000;
-            height: 130px;
-            width: 100%;
+            height: 250px;
+            width: 27%;
             padding: 10px;
             box-sizing: border-box;
             background: #b5d3db;
             opacity: .7;
         }
-        #cluster-radius {
-            max-width: 100%;
+        #data {
+            position: fixed;
+            top: 45px;
+            left: 85px;
+            z-index: 1000;
+            height: 30px;
+            width: 100px;
+            padding: 10px;
+            box-sizing: border-box;
         }
         #maintext {
             font-family: Pompadur, 'Comic Sans MS', cursive;
@@ -59,10 +66,21 @@
 <div id="mapid"></div>
 <div id="setup">
     <h1 id = "maintext">На данной карте представлены:</h1>
-    <p class="text", id = "bus">Автобусы
+    <p class="text", id = "bus">Автобусы</p>
+    <td>
+        <input type="color" value="#242D84" id="buscolor"><button type="button" id="bcolor">Покрасить</button>
+    </td>
     <p class="text", id = "tbus">Троллейбусы</p>
+    <td>
+        <input type="color" value="#B71D2F" id="tbuscolor"><button type="button" id="tcolor">Покрасить</button>
+    </td>
     <p class="text", id = "mbus">Маршрутное такси</p>
+    <td>
+        <input type="color" value="#61AB1B" id="mbuscolor"><button type="button" id="mcolor">Покрасить</button>
+    </td>
 </div>
+
+
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 <script src="leaflet/map_draw.js"></script>
 </body>
