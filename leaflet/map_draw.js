@@ -68,7 +68,7 @@ e.target.setStyle(different_color['shining'])
     e.target.bringToBack();
 e.target.setStyle(different_color[bustype])
 })
-.bindPopup(`${r.id}`)
+.bindPopup(`${r.routeTitle}`)
     if (bustype == "bus"){
         arr.b.push(temp);
     }
